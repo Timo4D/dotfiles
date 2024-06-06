@@ -71,10 +71,17 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+alias ls='lsd'
 alias vim='nvim'
 alias c='clear'
 alias br='xrandr --output eDP-1 --brightness'
 
 # Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
+
+export PATH=$PATH:/home/timo/.local/share/bob/nvim-bin
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
