@@ -1,6 +1,6 @@
 return {
 	'nvim-treesitter/nvim-treesitter',
-	config = {
+	opts = {
 		ensure_installed= {'lua', 'html', 'css', 'javascript', 'typescript', 'markdown'},
 		auto_install = true,
 		highlight = {

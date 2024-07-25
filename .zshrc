@@ -76,7 +76,7 @@ alias vim='nvim'
 alias c='clear'
 alias br='xrandr --output eDP-1 --brightness'
 
-# Shell integrations
+. "$HOME/.cargo/env" 
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH=$PATH:/home/timo/.local/share/bob/nvim-bin
