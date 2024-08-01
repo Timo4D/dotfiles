@@ -72,11 +72,11 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='lsd'
+alias lsa='lsd -al'
 alias vim='nvim'
 alias c='clear'
 alias br='xrandr --output eDP-1 --brightness'
 
-. "$HOME/.cargo/env" 
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH=$PATH:/home/timo/.local/share/bob/nvim-bin
