@@ -1,11 +1,5 @@
-vim.g.mapleader = " "
--- Disable netrw for neotree
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-vim.opt_local.conceallevel = 2
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
+if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
     "clone",
@@ -17,15 +11,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
-
+require("vim-options")
 require("lazy").setup("plugins")
-
-
-
 vim.cmd.colorscheme "catppuccin"
-
-
-
-
-
