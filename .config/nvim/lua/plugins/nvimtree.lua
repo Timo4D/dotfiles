@@ -27,7 +27,7 @@ return {
           glyphs = {
             default = "󰈚",
             folder = {
-            --  default = "",
+              --  default = "",
               empty = "",
               empty_open = "",
               open = "",
@@ -37,7 +37,6 @@ return {
           },
         },
       },
-
-        },
+    },
   },
 }
