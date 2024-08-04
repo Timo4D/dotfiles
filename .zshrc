@@ -76,6 +76,7 @@ alias lsa='lsd -al'
 alias vim='nvim'
 alias c='clear'
 alias br='xrandr --output eDP-1 --brightness'
+alias lgit='lazygit'
 
 eval "$(zoxide init --cmd cd zsh)"
 
