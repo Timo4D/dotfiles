@@ -52,10 +52,18 @@ alias vim='nvim'
 alias c='clear'
 alias br='xrandr --output eDP-1 --brightness'
 alias lgit='lazygit'
+alias cd='z'
 
 # Cargo and Bob
 . "$HOME/.cargo/env"
 export PATH=$PATH:/home/timo/.local/share/bob/nvim-bin
+export PATH=$PATH:/home/timo/.local/bin
 
 # Starship
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(zoxide init zsh)"
